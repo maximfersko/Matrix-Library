@@ -42,8 +42,8 @@ int eq_matrix(matrix_t *A, matrix_t *B) {
     double equal;
     if (((validate(A) == true) && (validate(B) == true)) && \
         ((A->rows == B->rows) && (A->columns == B->columns))) {
-        for (int i = 0; i < A->rows; i++) {
-            for (int j = 0; j < A->columns; j++) {
+        for (int i = 0; i < A->rows || status; i++) {
+            for (int j = 0; j < A->columns || status; j++) {
                 equal = fabs(A->matrix[i][j] - B->matrix[i][j]);
                 if (equal > accuracy) status = FAILURE;
             }

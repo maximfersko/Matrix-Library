@@ -26,12 +26,10 @@ matrix.a: matrix.o
 matrix.o:
 	gcc -c $(SRC) 
 
-
 clean:
 	rm -rf *.txt test matrix valgrind leaks *.dSYM *.out *.cfg
 	rm -rf *.gcno *.gcda *.gcov *.info report
 	rm -rf *.o *.a
-
 
 gcov_report:
 	sh test.sh
