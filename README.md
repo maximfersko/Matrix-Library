@@ -2,7 +2,7 @@
 
 ## Implementation of the data type library matrix and operations on the type.
 
-###Struct data type matrix
+### Struct data type matrix
 
 ```
 typedef enum {
