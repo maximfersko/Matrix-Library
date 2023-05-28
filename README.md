@@ -21,14 +21,14 @@ typedef struct matrix_struct {
 
 ```
 
-###How to build library:
+### How to build library:
 
 ```
 $ cd src
 $ make
 
 ```
-###How to run tests:
+### How to run tests:
 
 ```
 $ cd src
