@@ -13,7 +13,7 @@ typedef enum {
 } matrix_type_t;
 
 typedef struct matrix_struct {
-    double** matrix;
+    double **matrix;
     int rows;
     int columns;
     matrix_type_t matrix_type;
