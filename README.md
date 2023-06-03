@@ -38,5 +38,14 @@ $ make gcov_report
 ```c
 matrix_t create_matrix(int rows, int columns);
 ```
-Description:
 This function creates a new matrix with the specified number of rows and columns. It returns a matrix_t structure representing the created matrix. If the number of rows or columns is non-positive, the matrix_type field of the returned structure is set to INCORRECT_MATRIX
+
+```c
+void remove_matrix(matrix_t *A);
+```
+This function frees the memory allocated for a matrix. It takes a pointer to a matrix_t structure as input and sets the fields of the structure to appropriate values after freeing the memory.
+
+```c
+int eq_matrix(matrix_t *A, matrix_t *B);
+```
+This function compares two matrices for equality. It returns SUCCESS if the matrices are equal and FAILURE otherwise. Matrices are considered equal if they have the same dimensions and their corresponding elements are within a defined accuracy.
