@@ -4,7 +4,7 @@
 
 ### Struct data type matrix
 
-```
+```c
 typedef enum {
     CORRECT_MATRIX = 0,
     INCORRECT_MATRIX = 1,
