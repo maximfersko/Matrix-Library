@@ -18,21 +18,18 @@ typedef struct matrix_struct {
     int columns;
     matrix_type_t matrix_type;
 } matrix_t;
-
 ```
 
 ### How to build library:
 
-```
+```bash
 $ cd src
 $ make
-
 ```
 ### How to run tests:
 
-```
+```bash
 $ cd src
 $ make gcov_report
-
 ```
 
